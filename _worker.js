@@ -21,7 +21,7 @@ const KV_PROXY_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/
 const PROXY_BANK_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt";
 const DNS_SERVER_ADDRESS = "8.8.8.8";
 const DNS_SERVER_PORT = 53;
-const PROXY_HEALTH_CHECK_API = "https://prod-test.jdevcloud.com/check";
+const PROXY_HEALTH_CHECK_API = "https://api.checker-ip.web.id/check?ip=84.235.245.18:34501";
 const CONVERTER_URL = "https://api.foolvpn.me/convert";
 const DONATE_LINK = "https://trakteer.id/dickymuliafiqri/tip";
 const BAD_WORDS_LIST =
