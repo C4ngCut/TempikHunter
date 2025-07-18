@@ -934,7 +934,7 @@ function safeCloseWebSocket(socket) {
 }
 
 async function checkProxyHealth(proxyIP, proxyPort) {
-  const req = await fetch(`${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}:${proxyPort}`);
+  const req = await fetch(`${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}&port=${proxyPort}`);
   return await req.json();
 }
 
@@ -1486,7 +1486,7 @@ let baseHTML = `
                   const jsonResp = await res.json();
                   if (jsonResp.proxyip === true) {
                     isActive = true;
-                    pingElement.textContent = "Active " + jsonResp.delay + " ms " + "(" + jsonResp.colo + ")";
+                    pingElement.textContent = "Active " + jsonResp.delay  + " "+"(" + jsonResp.colo + ")";
                     pingElement.classList.add("text-green-600");
                   } else {
                     pingElement.textContent = "Inactive";
